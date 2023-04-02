@@ -23,6 +23,13 @@ body {
   background-color: var(--white-background);
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* Header */
 
 /* logo */
@@ -42,6 +49,12 @@ body {
   color: var(--dark);
 }
 
+.container.links,
+.container.contacts {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 /* links for main-nav-link (studio, portfolio, contacts) */
 
 .main-nav {
@@ -53,18 +66,33 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
 }
 
-.main-nav:active,
-.main-nav:hover,
-.main-nav:focus {
+.main-nav.link:active,
+.main-nav.link:hover,
+.main-nav.link:focus {
   color: var(--pressed-state);
 }
 
 .list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav.item,
+.contact-nav.item {
+  margin-right: 40px;
+}
+
+.main-nav.item:last-child,
+.contact-nav.item:last-child,
+.advantages.item:last-child,
+.work.item:last-child,
+.list-item:last-child {
+  margin-right: 0;
 }
 
 /* links for tel, email */
@@ -90,28 +118,40 @@ body {
 }
 
 /* Main */
-
 .hero-section {
   background-color: var(--dark);
 }
 
+.container.hero {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
 .main-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  padding-top: 188px;
   color: var(--white-text);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
-  height: 120px;
-  width: 496px;
 }
+
+/* Adventages */
 
 .hidden-text {
   visibility: hidden;
-  letter-spacing: 0.02em;
+  display: none;
+}
+
+.container.advantages {
+  margin-bottom: 120px;
 }
 
 .subtitle {
   color: var(--dark);
+  margin-top: 0;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -119,8 +159,44 @@ body {
   text-transform: capitalize;
 }
 
+/* What are we doing */
+
+.container.work {
+  padding-bottom: 120px;
+}
+
+.advantages.item,
+.work.item {
+  margin-right: 24px;
+}
+
+.img.block {
+  display: block;
+}
+
+/* Team */
+
+.our-team {
+  background-color: var(--light);
+}
+
+.container.team {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.team-photo {
+  margin-bottom: 32px;
+}
+
+.description.team {
+  padding-bottom: 32px;
+}
+
 .second-subtitle {
   color: var(--dark);
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -129,7 +205,8 @@ body {
 
 .description {
   font-size: 16px;
-  /* inherit from .body */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .second-subtitle-img {
@@ -155,10 +232,11 @@ body {
 
 .list-item {
   background-color: #ffffff;
-}
-
-.our-team {
-  background-color: var(--light);
+  margin-right: 24px;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Buttons */
@@ -172,6 +250,7 @@ body {
   color: var(--white-text);
   background-color: var(--primary-brand);
   cursor: pointer;
+  margin-bottom: 188px;
 }
 
 .button-filter {
@@ -208,4 +287,12 @@ body {
 
 .footer-text {
   color: var(--light);
+  margin-top: 16px;
+  margin-bottom: 0;
+  width: 264px;
+}
+
+.container.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
