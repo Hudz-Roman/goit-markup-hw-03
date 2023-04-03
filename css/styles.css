@@ -49,10 +49,13 @@ body {
   color: var(--dark);
 }
 
-.container.links,
-.container.contacts {
+.container-links {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.container-logo {
+  margin-right: 76px;
 }
 
 /* links for main-nav-link (studio, portfolio, contacts) */
@@ -75,6 +78,12 @@ body {
   color: var(--pressed-state);
 }
 
+.main-nav.link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .list {
   display: flex;
   list-style: none;
@@ -91,8 +100,12 @@ body {
 .contact-nav.item:last-child,
 .advantages.item:last-child,
 .work.item:last-child,
-.list-item:last-child {
+.team.item:last-child {
   margin-right: 0;
+}
+
+.container-contacts {
+  margin-left: auto;
 }
 
 /* links for tel, email */
@@ -112,9 +125,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contact-nav:hover,
-.contact-nav:focus {
+.contact-nav.link:hover,
+.contact-nav.link:focus {
   color: var(--pressed-state);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 72px;
 }
 
 /* Main */
@@ -181,7 +200,6 @@ body {
 }
 
 .container.team {
-  padding-bottom: 120px;
   padding-top: 120px;
 }
 
@@ -230,7 +248,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.list-item {
+.team.item {
   background-color: #ffffff;
   margin-right: 24px;
   text-align: center;
@@ -262,12 +280,26 @@ body {
   font-weight: 500;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+.btn-filter-item {
+  margin-right: 24px;
+}
+
+.btn-filter-item:last-child {
+  margin: 0;
 }
 
 .button-filter:hover,
 .button-filter:focus {
   color: #ffffff;
   background-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
 }
 
 .button-order:hover,
@@ -275,10 +307,56 @@ body {
   background-color: var(--pressed-state);
 }
 
+/* Portfolio page */
+
+.second-subtitle-img.portfolio {
+  padding: 32px 0 0 16px;
+  margin: 0;
+}
+
+.description-img.portfolio {
+  padding: 8px 0 32px 16px;
+  margin: 0;
+}
+
+.portfolio-filter.list {
+  margin-top: 96px;
+  justify-content: center;
+}
+
+.container.portfolio {
+  margin-top: 72px;
+}
+
+.portfolio.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: 360px;
+  border: 1px solid #e7e9fc;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.img.block {
+  width: 100%;
+}
+
 /* Footer */
 
 .footer {
   background-color: var(--dark);
+  margin-top: 120px;
 }
 
 .logo-studio-white {
