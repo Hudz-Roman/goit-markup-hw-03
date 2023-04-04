@@ -188,8 +188,8 @@ body {
   margin-right: 24px;
 }
 
-.advantages.item.first {
-  calc((100% - 72px) / 4);
+.advantages.item {
+  width: calc((100% - 72px) / 4);
 }
 
 /* What are we doing */
