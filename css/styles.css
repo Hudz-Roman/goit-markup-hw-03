@@ -65,6 +65,11 @@ body {
 
 /* links for main-nav-link (studio, portfolio, contacts) */
 
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
 .main-nav {
   color: var(--dark);
   text-decoration: none;
@@ -103,7 +108,7 @@ body {
 
 .main-nav.item:last-child,
 .contact-nav.item:last-child,
-.advantages.item:last-child,
+.advantages.list:last-child,
 .work.item:last-child,
 .team.item:last-child {
   margin-right: 0;
@@ -138,16 +143,13 @@ body {
 /* Main */
 .hero-section {
   background-color: var(--dark);
-}
-
-.container.hero {
-  text-align: center;
+  padding: 188px 0;
   margin-bottom: 120px;
+  text-align: center;
 }
 
 .main-title {
   margin: 0 auto 48px;
-  padding-top: 188px;
   color: var(--white-text);
   font-size: 56px;
   line-height: 1.07;
@@ -161,6 +163,10 @@ body {
 .hidden-text {
   visibility: hidden;
   display: none;
+}
+
+.second-section {
+  padding: 120px 0;
 }
 
 .container.advantages {
@@ -178,6 +184,14 @@ body {
   text-transform: capitalize;
 }
 
+.advantages.list {
+  margin-right: 24px;
+}
+
+.advantages.item.first {
+  calc((100% - 72px) / 4);
+}
+
 /* What are we doing */
 
 .container.work {
@@ -187,10 +201,6 @@ body {
 .advantages.item,
 .work.item {
   margin-right: 24px;
-}
-
-.img.block {
-  display: block;
 }
 
 /* Team */
@@ -260,6 +270,9 @@ body {
 /* Buttons */
 
 .button-order {
+  display: block;
+  min-width: 169px;
+  height: 56px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -268,11 +281,11 @@ body {
   color: var(--white-text);
   background-color: var(--primary-brand);
   cursor: pointer;
-  margin-bottom: 188px;
   padding: 16px 32px;
-  border-color: transparent;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .button-filter {
@@ -352,7 +365,8 @@ body {
   margin-bottom: 0;
 }
 
-.img.block {
+.img {
+  display: block;
   width: 100%;
 }
 
