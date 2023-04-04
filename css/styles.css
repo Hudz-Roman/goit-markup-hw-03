@@ -194,22 +194,20 @@ body {
 
 /* What are we doing */
 
-.container.work {
+.third-section {
   padding-bottom: 120px;
 }
 
 .advantages.item,
-.work.item {
+.work.item,
+.team.item {
   margin-right: 24px;
 }
 
 /* Team */
 
-.our-team {
+.fourth-section {
   background-color: var(--light);
-}
-
-.container.team {
   padding-top: 120px;
 }
 
@@ -218,13 +216,15 @@ body {
 }
 
 .description.team {
+  text-align: center;
   padding-bottom: 32px;
 }
 
 .second-subtitle {
+  text-align: center;
+  margin-bottom: 8px;
   color: var(--dark);
   margin-top: 0;
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -258,14 +258,18 @@ body {
   letter-spacing: 0.02em;
 }
 
-.team.item {
+.employee {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* .team.item {
   background-color: #ffffff;
-  margin-right: 24px;
   text-align: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-}
+} */
 
 /* Buttons */
 
@@ -372,7 +376,8 @@ body {
 
 /* Footer */
 
-.footer {
+.footer-section {
+  padding: 100px 0;
   background-color: var(--dark);
   margin-top: 120px;
 }
@@ -381,14 +386,13 @@ body {
   color: var(--light);
 }
 
-.footer-text {
-  color: var(--light);
-  margin-top: 16px;
-  margin-bottom: 0;
-  width: 264px;
+.logo.link.footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
-.container.footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.footer-text {
+  color: var(--light);
+  margin-bottom: 0;
+  width: 264px;
 }
