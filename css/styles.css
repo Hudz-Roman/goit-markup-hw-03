@@ -101,13 +101,13 @@ body {
   padding: 0;
 }
 
-.main-nav.list,
-.contact-nav.list {
+.main-nav.list {
   gap: 40px;
 }
 
 .contact-nav.list {
   display: flex;
+  gap: 40px;
 }
 
 /* .main-nav.item:last-child,
@@ -137,6 +137,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* .contact-nav.item {
+} */
 
 .contact-nav.link:hover,
 .contact-nav.link:focus {
@@ -186,6 +189,11 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+/*  */
+.advantages.item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+/*  */
 
 /* .advantages.list {
   margin-right: 24px;
