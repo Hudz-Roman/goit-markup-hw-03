@@ -30,6 +30,14 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
 /* Header */
 
 .main-header {
@@ -137,7 +145,7 @@ body {
 .hero-section {
   background-color: var(--dark);
   padding: 188px 0;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
   text-align: center;
 }
 
@@ -163,7 +171,7 @@ body {
 }
 
 .container.advantages {
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .subtitle {
@@ -201,16 +209,16 @@ body {
 }
 
 .team-photo {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .description.team {
   text-align: center;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 }
 
 .second-subtitle {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 8px;
   color: var(--dark);
   margin-top: 0;
@@ -218,6 +226,10 @@ body {
   font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.2;
+}
+
+.second-subtitle.team {
+  text-align: center;
 }
 
 .description {
@@ -343,6 +355,7 @@ body {
 }
 
 .second-subtitle-img.portfolio {
+  font-family: 'Roboto';
   margin-bottom: 8px;
 }
 
@@ -351,7 +364,7 @@ body {
 .footer-section {
   padding: 100px 0;
   background-color: var(--dark);
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 
 .logo-studio-white {
@@ -361,6 +374,7 @@ body {
 .logo.link.footer {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer-text {
